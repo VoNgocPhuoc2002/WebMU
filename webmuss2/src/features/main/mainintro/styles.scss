@@ -1,0 +1,31 @@
+.mainintro {
+    background-image: url("https://static.webzen.com/mu/official/v01/dist/images/bg_main_intro.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 770px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__title {
+        padding-left: 40px;
+        padding-right: 40px;
+        font-style: italic;
+        font-size: 40px;
+        color: white;
+    }
+
+    &__desc {
+        padding-top: 30px;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.5;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-style: italic;
+        color: white;
+
+    }
+}

@@ -1,0 +1,104 @@
+.main-info {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-image: url("https://static.webzen.com/mu/official/v01/dist/images/bg_main_info.jpg");
+    background-size: cover;
+      background-position: center;
+
+    .rankings, .hall-of-fame {
+        width: 400px;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-left: 50px;
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #5d67b1;
+
+        }
+
+        .dropdowns {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            select {
+                padding: 10px;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+                font-size: 14px;
+
+            }
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+
+            th, td {
+                border: 1px solid #ddd;
+                padding: 10px;
+                text-align: left;
+                font-size: 14px;
+                
+            }
+
+            th {
+                background-color: #f2f2f2;
+                font-weight: bold;
+                background-color: #5d67b1;
+                color: white
+            }
+
+           
+        }
+
+        .more {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .guides {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        // .guide {
+        //     text-align: center;
+        //     margin-bottom: 20px;
+
+        //     img {
+        //         width: 100%;
+        //         height: auto;
+        //         margin-bottom: 10px;
+        //     }
+
+        //     .go {
+        //         display: inline-block;
+        //         padding: 10px 20px;
+        //         background-color: #ff6600;
+        //         color: #fff;
+        //         text-decoration: none;
+        //         border-radius: 4px;
+        //         font-weight: bold;
+
+        //         &:hover {
+        //             background-color: #e65c00;
+        //         }
+        //     }
+        // }
+    }
+}
