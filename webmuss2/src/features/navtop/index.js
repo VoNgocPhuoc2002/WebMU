@@ -1,15 +1,14 @@
 import React from "react";
 import "./styles.scss" 
-
+import { Link } from "react-router-dom";
 
 const NavTop = () => {
   return (
     <div className="navbar">
-      
       <ul className="navbar__menu">
-        <li><a href="#">News</a>
+        <li><Link to="/news">News</Link>
           <ul className="submenu">
-            <li><a href="#">Notice</a></li>
+            <li><a href="/news">Notice</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="#">Update Roadmap</a></li>
           </ul>

@@ -18,21 +18,7 @@ const MainLatest = () => {
               <a href="#">Scheduled Maintenance on June 25, 2024...</a>
               <span className="date">6/24/2024</span>
             </li>
-            <li>
-              <span className="tag patch-note">Patch Note</span>
-              <a href="#">Patch Notes - June 18, 2024</a>
-              <span className="date">6/18/2024</span>
-            </li>
-            <li>
-              <span className="tag announcement">Announcement</span>
-              <a href="#">Scheduled Maintenance on June 18, 2024...</a>
-              <span className="date">6/17/2024</span>
-            </li>
-            <li>
-              <span className="tag announcement">Announcement</span>
-              <a href="#">Ydaltir Server 'Playtime Attack Event' Rew...</a>
-              <span className="date">6/11/2024</span>
-            </li>
+           
           </ul>
           <a href="#" className="more">
             More
