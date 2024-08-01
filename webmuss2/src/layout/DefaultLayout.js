@@ -8,7 +8,7 @@ const DefaultLayout = ({ children }) => {
     <div>
       <Header />
       <NavTop />
-      <div className="content">{children}</div>
+      <div  className="content">{children}</div>
       <Footer />
     </div>
   );
