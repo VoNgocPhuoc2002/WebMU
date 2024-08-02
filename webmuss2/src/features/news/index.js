@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-
-import "./news.scss" 
+import { useNavigate } from 'react-router-dom';
+import './styles.scss';
 
 const News = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const navigate = useNavigate();
 
   const newsData = [
     {
@@ -51,13 +52,24 @@ const News = () => {
   ];
 
   const categories = ['All', 'Announcement', 'Maintenance', 'Patch Note', 'Known Issues'];
+  const handleArticleClick = (news) => {
+    navigate('/DetailNew', { state: { news } });
+  };
 
+ 
+  
   return (
     <div className="news-section">
-      <h1 className="news-title">Notice</h1>
+         <div className="header">
+      <h1>Notice</h1>
+      <div className="search-bar">
+        <input type="text" placeholder="Search by title" />
+        <span className="search-icon">🔍</span>
+      </div>
+    </div>
       <div className="news-nav">
         {categories.map(category => (
-          <button
+          <button 
             key={category}
             className={`news-item ${selectedCategory === category ? 'active' : ''}`}
             onClick={() => setSelectedCategory(category)}
@@ -65,22 +77,15 @@ const News = () => {
             {category}
           </button>
         ))}
-        <div className="search-container">
-          <input
-            type="text"
-            placeholder="Search by title"
-            className="search-input"
-          />
-          <button className="search-button">
-            <i className="fas fa-search"></i>
-          </button>
-        </div>
+     
       </div>
       <div className="news-list">
         {newsData
           .filter(news => selectedCategory === 'All' || news.category === selectedCategory)
           .map(news => (
-            <div key={news.id} className="news-article">
+            <div key={news.id} className="news-article"            
+             onClick={() => handleArticleClick(news)}
+            >
               <div className="news-info">
                 <span className="news-category">{news.category}</span>
                 <span className="news-title">{news.title}</span>
@@ -90,7 +95,6 @@ const News = () => {
             </div>
           ))}
       </div>
-      <p>jkashgdjsadsaaaaaaaaaaaaaaaaaaaaaaaaadjhsa</p>
     </div>
   );
 };

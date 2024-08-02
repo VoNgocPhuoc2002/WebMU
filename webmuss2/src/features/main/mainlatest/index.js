@@ -3,14 +3,14 @@ import "./styles.scss";
 
 const MainLatest = () => {
   return (
-    <div className="container">
+    <div className="mainlatest">
       <div className="main-latest">
         <div className="latest-news">
           <h2>Latest News</h2>
           <ul>
             <li>
               <span className="tag patch-note">Patch Note</span>
-              <a href="#">Patch Notes - June 25, 2024</a>
+              <a href="#">Patch Notes - June 25, 2024ssss</a>
               <span className="date">6/25/2024</span>
             </li>
             <li>

@@ -22,7 +22,7 @@ const NavTop = () => {
         </li>
         <li><a href="#">Leader Board</a>
           <ul className="submenu">
-            <li><a href="#">Ranking</a></li>
+            <li><a href="/RankingTable">Ranking</a></li>
             <li><a href="#">Hall of Fame</a></li>
             <li><a href="#">Event Ranking</a></li>
           </ul>
