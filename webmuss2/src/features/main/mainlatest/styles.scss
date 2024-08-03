@@ -26,22 +26,24 @@
 
       li {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         margin-bottom: 10px;
 
-        .tag {
-          font-size: 16px;
-          padding: 2px 6px;
+        .category {
+          padding: 5px;
           border-radius: 4px;
+          margin-bottom: 5px;
+          color: #ff5733;
+          font-size: 0.9rem;
+          border: 1px solid #ff5733;
+          display: flex;
+          max-width: 130px;
+          align-items: center;
+          justify-content: center;
+          max-height: 50px;
 
-          &.patch-note {
-            background-color: #ffcccc;
-          }
-
-          &.announcement {
-            background-color: #ccffcc;
-          }
+         
         }
 
         a {
@@ -52,7 +54,7 @@
         }
 
         .date {
-          font-size: 12px;
+          font-size: 16px;
           color: #999;
         }
       }

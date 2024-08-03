@@ -3,7 +3,6 @@
   font-family: Arial, sans-serif;
   color: #333;
   width: 100%;
-  max-height: 1300px;
   background-color: #ffffff;
 
   .header {
@@ -133,6 +132,7 @@
       .news-info {
         display: flex;
         flex-direction: column;
+        width: 820px;
 
         .news-category {
           padding: 5px;

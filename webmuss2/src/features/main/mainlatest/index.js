@@ -9,14 +9,18 @@ const MainLatest = () => {
           <h2>Latest News</h2>
           <ul>
             <li>
-              <span className="tag patch-note">Patch Note</span>
+              <span className="category">Patch Note</span>
               <a href="#">Patch Notes - June 25, 2024ssss</a>
               <span className="date">6/25/2024</span>
             </li>
             <li>
-              <span className="tag announcement">Announcement</span>
-              <a href="#">Scheduled Maintenance on June 25, 2024...</a>
-              <span className="date">6/24/2024</span>
+              <span className="category">Patch Note</span>
+              <a href="#">Patch Notes - June 25, 2024ssss</a>
+              <span className="date">6/25/2024</span>
+            </li>  <li>
+              <span className="category">Patch Note</span>
+              <a href="#">Patch Notes - June 25, 2024ssss</a>
+              <span className="date">6/25/2024</span>
             </li>
            
           </ul>

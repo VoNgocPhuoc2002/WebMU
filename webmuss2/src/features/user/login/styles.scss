@@ -6,7 +6,10 @@
   align-items: center;
   min-height: 100vh;
   font-family: 'Arial', sans-serif;
-
+  min-height: min-content;
+  width: 100vw; /* Chiều rộng toàn màn hình */
+  height: 100vh; /* Chiều cao toàn màn hình */
+  z-index: 1000; /* Đảm bảo phần tử ở trên cùng */
   .wz-cont {
     width: 400px;
     background-color: #1a1a1a;

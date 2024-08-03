@@ -51,7 +51,9 @@
       width: 100%;
       border-collapse: collapse;
       font-family: Arial, sans-serif;
-  
+      tr{
+        height: 50px;
+      }
       th, td {
         padding: 10px 15px;
         text-align: center;

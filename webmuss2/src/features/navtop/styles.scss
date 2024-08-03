@@ -1,6 +1,8 @@
 .navbar {
   background-color: #111010;
   padding: 10px 0;
+  position: relative; 
+  z-index: 1000; 
   .container{
     display: flex;
     flex-direction: row;
@@ -12,8 +14,9 @@
     margin: 0;
     justify-content: center;
     li {
-      position: relative;
-      z-index:2;
+  position: relative; 
+
+  z-index: 1000; 
       a {
         color: #bbb;
         padding: 15px 20px;
